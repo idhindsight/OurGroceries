@@ -19,6 +19,28 @@ each "list" is a new instance, with the following features:
     - checking things "off" the list
     - CrUD
 
+## Database Design
+    Meals
+        name
+        tags[]
+        info
+        ratings[]
+        comments[]
+        url
+        ref items[]
+
+    Items
+        name
+        desc (optional)
+        quantity (default: 1)
+
+    Users
+        name
+        icon? (like netflixs method)
+
+    Lists
+        ref meals[]
+
 
 
 
